@@ -1,0 +1,229 @@
+/*////////////////////////////////////////////////////////////////////////
+Table of Contents:
+    1. Global Styles
+    2. Typografie
+    3. Areas
+        3.1 Header
+        3.2 Testimonial
+        3.3 Support
+        3.4 Faq
+        3.5 Footer
+////////////////////////////////////////////////////////////////////////*/
+
+
+/*////////////////////////
+    1. Global Styles
+////////////////////////*/
+:root {
+  --grijs: #899CA0;
+  --donkergroen: #1C2B32;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+main {
+  max-width: 1000px;
+
+  margin: auto;
+}
+
+section {
+  padding: 70px 0;
+}
+
+/*////////////////////////
+    2. Typography
+////////////////////////*/
+Body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+/*////////////////////////
+    3. Areas
+////////////////////////*/
+
+
+/*///////////// 3.1 Header /////////////*/
+header {
+  background-image: url("../assets/images/mountains.jpg");
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.header_content {
+  text-align: center;
+}
+
+
+p.placeholder_ {
+  font-weight: 300;
+
+}
+
+p.button_ {
+  background-color: #222222;
+  color: aliceblue;
+}
+
+.formulario {
+  display: flex;
+  margin-top: 50px;
+
+
+  justify-content: center;
+}
+
+.formulario input,
+.formulario button {
+  flex: 1;
+  border-radius: 30px;
+}
+
+.formulario input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  flex-grow: 2;
+}
+
+.formulario button {
+
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
+input {
+  border: 2px solid black;
+  background: none;
+  padding: 20px;
+  font-size: 16px;
+
+}
+
+button {
+  color: white;
+  background-color: var(--donkergroen);
+  border: none;
+
+}
+
+::placeholder {
+  color: #222222;
+  opacity: 1; /* Firefox */
+}
+
+
+/*///////////// 3.2 Testimonial /////////////*/
+
+.testimonial_ {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 100px;
+  box-shadow: 0 6px 8px 4px rgba(0, 0, 0, 0.1);
+  padding: 80px 60px;
+  border-radius: 10px;
+}
+
+.avatar_naam {
+  display: flex;
+  flex-direction: row;
+}
+
+.quote_icon  {
+  margin-right: 15px;
+}
+
+.avatar_naam {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+
+}
+
+.avatar_naam img{
+  margin-right: 25px;
+  width:45px;
+}
+.avatar_naam p{
+  font-style: oblique;
+  font-weight: 200;
+
+}
+
+
+
+/*///////////// 3.3 Support /////////////*/
+
+.call_center {
+  width: 100%;
+  margin-top: 100px ;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.contact__button{
+  background: var(--donkergroen);
+  padding: 20px 30px;
+  border-radius: 30px;
+  margin-top: 50px;
+}
+
+
+
+
+
+/*///////////// 3.4 Faq /////////////*/
+.faq{
+  margin-top: 100px ;
+  margin-bottom: 20px;
+}
+
+details{
+  margin-bottom: 25px;
+}
+
+details > p {
+  border-radius:  10px;
+  background-color: var(--donkergroen);
+  padding: 25px;
+  margin-top: 15px;
+  color: white;
+}
+
+
+/*///////////// 3.5 Footer /////////////*/
+
+footer{
+  justify-content: center;
+  display: flex;
+  height:70px;
+  background-color: var(--donkergroen);
+  flex-direction: column;
+  align-items: center;
+}
+
+footer > p{
+  color: white;
+  font-weight: 100;
+  font-size: 12px;
+}
+
